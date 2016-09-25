@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="quienes.css">
+<script src="jquery-3.1.0.js"></script>
+<title>quienes</title>
+<script type="text/javascript">
+$(document).ready(function() {
+	$('#more').mouseover(function(){
+		$('.preg').show();
+		$('.preg').css("display","block");
+		});
+	$('#more').mouseout(function(){
+		$('.preg').hide();
+		});
+	$('.preg').mouseover(function(){
+		$('.preg').show();
+	});
+	$('.preg').mouseout(function(){
+		$('.preg').hide();
+		});
+});
+</script>
+</head>
+<body>
+<div>
+<header>
+<div id="logo">
+<a href="index.html"><img src="images/logo1.png"/></a>
+</div>
+<nav>
+<div class="enlace">
+<a href="quienes.html" id="more"><p>Los quienes</p></a>
+	<div class="preg">
+	<a href=""><p>¿Qué somos?</p></a>
+	<a href=""><p>¿Quiénes somos?</p></a>
+	<a href=""><p>¿Porqué somos?</p></a>
+    </div>
+</div>
+<div id="margen" class="enlace"><a href=""><p>Ayuda</p></a></div>
+<div class="enlace"><a href=""><p>Foro</p></a></div>
+</nav>
+</header>
+<h2>¿Qué somos?</h2>
+<aside>
+<section>
+<p class="texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer felis magna, tincidunt at turpis ut, placerat iaculis eros. Maecenas sodales fringilla semper. Donec aliquam id orci id condimentum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse pretium ornare magna non egestas. Sed scelerisque sem non dapibus tempor.</p>
+</section>
+<section>
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/Rr2xFgo0XrU" frameborder="0" allowfullscreen></iframe>
+</section>
+</aside>
+<h2 id="t2">¿Quiénes somos?</h2>
+<aside>
+<section>
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/Rr2xFgo0XrU" frameborder="0" allowfullscreen></iframe>
+</section>
+<section><p class="texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer felis magna, tincidunt at turpis ut, placerat iaculis eros. Maecenas sodales fringilla semper. Donec aliquam id orci id condimentum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse pretium ornare magna non egestas. Sed scelerisque sem non dapibus tempor.</p>
+</section>
+</aside>
+<h2 id="t3">¿Porqué somos?</h2>
+<aside>
+<section>
+<p class="texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer felis magna, tincidunt at turpis ut, placerat iaculis eros. Maecenas sodales fringilla semper. Donec aliquam id orci id condimentum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse pretium ornare magna non egestas. Sed scelerisque sem non dapibus tempor.</p>
+</section>
+<section>
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/Rr2xFgo0XrU" frameborder="0" allowfullscreen></iframe>
+</section>
+</aside>
+<button type="submit">¿Quieres formar parte?</button>
+</div>
+</body>
+</html>

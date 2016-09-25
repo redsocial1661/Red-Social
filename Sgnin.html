@@ -1,0 +1,202 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Sesion Iniciada</title>
+<link rel="stylesheet" type="text/css" href="Sgnin.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+<script src="jquery-3.1.0.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$('.cambio').slideUp();
+	$('#more').mouseover(function(){
+		$('.preg').show();
+		$('.preg').css("display","block");
+		});
+	$('#more').mouseout(function(){
+		$('.preg').hide();
+		});
+	$('.preg').mouseover(function(){
+		$('.preg').show();
+	});
+	$('.preg').mouseout(function(){
+		$('.preg').hide();
+		});
+	$('#perfil').click(function(){
+		$('#perfil').css("cursor","pointer");
+		$('#perfil').css("border","4px solid  white");
+		$('#perfil').css("border-radius","100%");
+		$('.cambio').slideDown("fast");
+		$('.cambio').css("display","block");		
+		});
+	$('nav').mouseover(function(){
+		$('.cambio').slideUp("fast");
+		$('#perfil').css("border","none");
+		$('#perfil').css("border-radius","0");
+		});
+	$('#logo').mouseover(function(){
+		$('.cambio').slideUp("fast");
+		$('#perfil').css("border","none");
+		$('#perfil').css("border-radius","0");
+		});
+	$('.actividad').mouseover(function(){
+		$('.cambio').slideUp("fast");
+		$('#perfil').css("border","none");
+		$('#perfil').css("border-radius","0");
+		});
+	$('#clip').click(function() {
+ $('#adj').click();
+		});
+$('#enter').click(function() {
+ $('#do').click();
+		});
+	$('#adj').change(function() {
+ 		var value = $(this).val(),
+ 		path = value.split("\\"),
+ 		file = path[path.length-1];
+		$('#sms').html(file);
+		});
+	$('#op1').click(function(){
+		$('#inicio').fadeOut("fast");
+		$('#mensaje').fadeIn("slow");
+		});
+	$('#x').click(function(){
+		$('#mensaje').fadeOut("fast");
+		$('#inicio').fadeIn("slow");
+		});
+});
+</script>
+</head>
+<body>
+<header>
+<div id="logo" title="Hapanaja">
+<img src="images/logo1.png"/>
+</div>
+<div id="usuario">
+<img id="perfil" src="images/user.png"/>
+	<div class="cambio">
+        <div class="tri"></div>
+        <p class="ini">Perfil</p>
+        <p class="ini">Configuración</p>
+        <p class="ini">Sugerencias</p>
+        <p class="ini">Salir</p>
+	</div>
+</div>
+<nav>
+<div class="enlace" title="Sobre nosotros">
+<a href="quienes.html" id="more"><p>Los quienes</p></a>
+	<div class="preg">
+	<a href=""><p>¿Qué somos?</p></a>
+	<a href=""><p>¿Quiénes somos?</p></a>
+	<a href=""><p>¿Porqué somos?</p></a>
+    </div>
+</div>
+<div id="margen" class="enlace" title="Resuelve tus dudas"><a href=""><p>Ayuda</p></a></div>
+<div class="enlace" title="Comparte tus ideas"><a href=""><p>Foro</p></a></div>
+</nav>
+</header>
+<div class="interfaz">
+	<div id="inicio">
+        <h1>Bienvenido Usuario1242, ¿Que quieres hacer hoy?</h1>
+        <div id="actividades">
+            <div id="op1" class="actividad">
+            <img id="con" src="images/conversaA.png"/>
+            <p>Revisar Mensajes</p>
+            </div>
+            <div class="actividad">
+            <img id="ens" src="images/enseñaA.png"/>
+            <p>Dictar Clase</p>
+            </div>
+            <div class="actividad">
+            <img id="apr" src="images/aprendeA.png"/>
+            <p>Buscar Curso</p>
+            </div>
+            <div class="actividad">
+            <img id="arg" src="images/argumentaA.png"/>
+            <p>Crear discusión</p>
+            </div>
+    	</div>
+    </div>
+    <div id="mensaje">
+    	<div id="people">
+        	<div class="member">
+            <div class="foto">
+            <img src="images/imagen1.jpg"/>
+            </div>
+            <div class="name">
+            <p>Usuario 24567</p>
+            </div>
+            </div>
+            <div class="member">
+            <div class="foto">
+            <img src="images/imagen1.jpg"/>
+            </div>
+            <div class="name">
+            <p>Usuario 24567</p>
+            </div>
+            </div>
+			<div class="member">
+            <div class="foto">
+            <img src="images/imagen1.jpg"/>
+            </div>
+            <div class="name">
+            <p>Usuario 24567</p>
+            </div>
+            </div>
+			<div class="member">
+            <div class="foto">
+            <img src="images/imagen1.jpg"/>
+            </div>
+            <div class="name">
+            <p>Usuario 24567</p>
+            </div>
+            </div>
+            <div class="member">
+            <div class="foto">
+            <img src="images/imagen1.jpg"/>
+            </div>
+            <div class="name">
+            <p>Usuario 24567</p>
+            </div>
+            </div>
+            <div class="member">
+            <div class="foto">
+            <img src="images/imagen1.jpg"/>
+            </div>
+            <div class="name">
+            <p>Usuario 24567</p>
+            </div>
+            </div>
+            <div class="member">
+            <div class="foto">
+            <img src="images/imagen1.jpg"/>
+            </div>
+            <div class="name">
+            <p>Usuario 24567</p>
+            </div>
+            </div>
+        </div>
+<div id="chat">
+                <div id="view">
+                	<img id="x" src="images/x.png"/>
+                </div>
+                <div id="coment">
+                    <form action="">
+                    	<input type="text" autocomplete="off" name="sms" id="sms" placeholder="Escribe aquí..."/>
+                        <button type="submit" id="do">Enviar</button>
+                        <div id="enter">
+                        	<img src="images/in.png"/>
+                        </div>
+                        <input id="adj" type="file"/>
+                        
+                        <div id="clip">
+                        	<img src="images/clipA.png"/>
+                        </div>
+                    </form>
+                </div>
+         </div>
+    </div>
+</div>
+</body>
+</html>

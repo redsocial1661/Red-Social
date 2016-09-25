@@ -1,0 +1,184 @@
+@charset "utf-8";
+*{
+	padding:0;
+	margin:0;
+	}
+html, body{
+	width:100%;
+	height:100%;
+	font-family:Verdana;
+	}
+body{
+	background-color:#FFE419;
+		}
+header{
+	width:100%;
+	float:left;
+	}
+#logo{
+	width:40%;
+	padding-top:1%;
+	float:left;	
+	}
+#logo img{
+	width:40%;
+	margin-left:30%;
+ }
+nav{
+	width:60%;
+	padding-top:1%;
+	float:right;
+	}
+nav .enlace{
+	width:30%;
+	float:left;
+	}
+nav .enlace{
+	margin-left:1.6%;
+	margin-right:1.6%;
+	}	
+.enlace p{
+	text-align:center;
+	font-size:22px;
+	color:#B21466;
+	line-height:400%;
+	}
+.enlace p:hover{
+	background-color:white;
+	}	
+	a{
+	text-decoration:none;
+	}
+aside{
+	border:3px solid black;
+	border-radius:10px;
+	margin-top:4%;
+	width:40%;
+	float:left;
+	margin-left:30%;	
+	}
+aside h2{
+	text-align:center;
+	padding-top:4%;
+	padding-bottom:6%;
+	color:#B21466;
+	}
+form{
+	width:80%;
+	margin-left:10%;
+	color:black;
+	}
+form input{
+	width:80%;
+	border:3px solid #FFE419;
+	border-radius:10px;
+	margin-left:10%;
+	margin-top:6%;
+	margin-bottom:6%;
+	padding:2%;
+	font-size:28px;
+	text-align:center;
+	}
+#dni{
+	margin-top:0%;
+	border:none;
+	color:white;
+	font-size:14px;
+	margin-bottom:2%;
+	}
+.adj{
+	margin-top:4%;
+	color:white;
+	text-align:center;
+	font-size:28px;
+	line-height:0%;
+	}
+.adj:hover{
+	color:white;
+	}
+form #cb{
+	width:10%;
+	float:left;
+	margin-top:1%;
+	margin-bottom:1%;
+	border-radius:10px;
+	border:3px solid #FFE419;
+	color:#B21466;
+	}
+form button{
+	text-align:center;
+	font-size:22px;
+	border-radius:10px;
+	border:3px solid #FFE419;
+	margin-top:4%;
+	margin-bottom:4%;
+	background-color:white;
+	color:grey;
+	width:40%;
+	padding:3%;
+	margin-left:10%;
+	}
+form button:hover{
+	background-color:#B21466;
+	color:yellow;
+}
+form p{
+	text-align:center;
+	margin-top:2%;
+	margin-bottom:4%;
+	color:#B21466;
+	}
+form p:hover{
+	color:#14B7CC;
+	}
+/*--------------VENTANA SOBREPUESTA-----------------------*/
+#ventana{
+	width:100%;
+	height:100%;
+	position:fixed;
+	background-image:url(images/fondo.png);
+	top:0;
+	left:0;
+	display:none;
+	}
+#ventana h2{
+	color:white;
+	padding-top:1%;
+	text-align:center;
+	}
+/*-------------------------------------------------------*/
+#form{
+	width:35%;
+	height:50%;
+	margin-left:32.5%;
+	}
+form #boton{
+	width:40%;
+	margin-top:0;
+	margin-left:30%;
+	}
+#regi input{
+	margin-top:4%;
+	margin-left:0;
+	width:100%;
+	}
+#cerrar{
+	width:50%;
+	padding-top:1%;
+	float:right;
+	}
+#cerrar p{
+	font-size:24px;
+	text-align:center;
+	color:#FFE419;
+}
+#cerrar p:hover{
+	color:white;
+	cursor:pointer;
+	}
+.preg{
+	display:none;
+	position:absolute;
+	width:18%;
+	background-color:#FFE419;
+}
