@@ -1,0 +1,121 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color:dodgerblue;
+}
+/*-----------------HEADER-------------------*/
+header{
+    width:90%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+}
+header .logo{
+    width:600px;
+    height:100px;
+    margin:10px;
+    margin-left:20px;
+    display: flex;
+    justify-content: flex-start;
+}
+header .logo h1{
+    font-size:20px;
+}
+header .logo a{
+    display: block;
+    width:100%;
+    height:100%;
+}
+header .logo a img{
+    width:100%;
+    height:100%;
+}
+
+header nav {
+    float:right;
+    width:60%;
+    margin:20px 10px;
+    height:50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav a{
+    width:100%;
+    text-align:center;
+    text-decoration: none;
+    padding:15px;
+    box-sizing: border-box;
+    font-weight: bolder;
+    position: relative;
+    font-size:20px;
+    color:white;
+    background: rgba(0,0,0,0.5);
+    margin-right:5px;
+}
+
+header nav a:before{
+    content:"";
+    position: absolute;
+    bottom:0;
+    left:0;
+    width:0;
+    height:0;
+    background-color:brown;
+    transition:.3s;
+}
+header nav a:after{
+    content:"";
+    position: absolute;
+    top:0;
+    left:0;
+    width:0;
+    height:0;
+    background-color:brown;
+    transition:.3s;
+}
+
+header nav a:hover:before{
+    width:100%;
+    height:6px;
+}
+
+header nav a:hover:after{
+    width:6px;
+    height:100%;
+}
+
+/*---------------------------------------*/
+/*--------------SECTION Y ARTICLES-------------------*/
+section{
+    width:80%;
+    margin:20px auto;
+}
+section article{
+    width:90%;
+    margin:20px auto;
+    border-radius:20px;
+    border:4px solid black;
+    padding:20px;
+}
+section article h2{
+    text-align:center;
+}
+section article>div{
+    display:flex;
+}
+section article div p{
+    display:block;
+    width:50%;
+    padding:15px;
+    box-sizing: border-box;
+}
+section article div .video{
+    width:50%;
+    box-sizing: border-box;
+    background:blue;
+}
+
+/*-----------------------------------------------------*/

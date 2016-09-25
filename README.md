@@ -1,2 +1,0 @@
-# Red-Social
-Red Social

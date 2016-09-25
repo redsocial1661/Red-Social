@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HAPANAJA</title>
+    <link rel="stylesheet" href="../Css/Estilos.css">
+    <link rel="stylesheet" href="Iconos/style.css">
+    <link rel="stylesheet" href="Iconos/style.css">
+    <script src="../JavaScript/jquery-3.1.0.js"></script>
+    <script src="../JavaScript/Scrol.js"></script>
+</head>
+<script src="../JavaScript/Scriptindex.js"></script>
+
+<body>
+    <!-- FORMULARIO DE REGISTRO NUEVO USUARIO ----------------------- -->
+    <!--<div id="ventana">
+        <div id="cerrar" title="Lo pensaré">
+            <h2>Aprende enseñando</h2>
+            <a href="#" onClick="cerrarmodal()">X</a>
+        </div>
+        <div class="form-desple">
+            <form id="registro" action="" method="post">
+                <div class="col1">
+                    <input type="text" name="rnombre" placeholder="Agrega tus nombres">
+                    <input type="text" name="rapellidos" placeholder="Agrega tus apellidos" required>
+                    <input type="text" name="rcorreo" placeholder="Agrega tu correo" required>
+                </div>               
+                <div class="col2">
+                    <p class="adj">Foto de tu DNI</p>
+                    <input type="file" id="dni" accept="image/png" name="radj required">
+                    <input type="password" name="rpassword" placeholder="Agrega tu contraseña" required>
+                    <input type="password" name="r2password" placeholder="Verifica tu contraseña" required>
+                    <button id="boton" type="submit">Bienvenido</button>    
+                </div>
+                
+            </form>    
+        </div>
+    </div>-->
+    <!-- --------------------------------------------------- -->
+    
+    <header>
+        <div class="logo" id="uplogo" >
+            <!--<a href="#" >
+                <img src="../Imagenes/logo1.png">
+            </a>-->
+            
+            <h1><span class="icon-book2"></span>HAPANAJA</h1>
+        </div>
+        <!-- MENU DESPLEGABLE -->
+        <nav>
+            <a href="#" id="nos"   class="cm"><span class="icon-users"></span>Nosotros</a>
+            <a href="#" id="ayuda" class="cm"><span class="icon-book2"></span>Ayuda</a>
+            <a href="#" id="foro"  class="cm"><span class="icon-comment2"></span>Foro</a>
+        </nav>
+    </header>
+    
+    <!-- FORMULARIO DE INGRESO -->
+    <div class="prueba" style="margin-bottom:100px">
+        <div class="forms">
+        <!-- -------------------REESTABLECEER CONTRASEÑA--------------------------- -->
+        <!-- ----------------------------------------------------------------------- -->
+        <section id="ventana2">
+             <div id="cerrar2" title="Lo pensaré">
+                <h2>Restaurar contraseña</h2>
+                <a href="#" onClick="cerrarmodal2()"><span class="icon-x"></span></a>
+            </div>
+            <div class="form-desple">
+
+                <form id="registro2" action="" method="post">
+                    <p>Escribe tu correo asociado</p>
+                    <div class="col1">
+                        <input type="text" placeholder="Escribe tu correo">                    
+                    </div>                               
+                </form>    
+            </div>
+        </section>
+        <!-- *********************************************************************** -->
+        <!-- *********************************************************************** -->
+        
+        <!-- -------------------INGRESO INICIAL------------------------------- -->
+        <!-- ----------------------------------------------------------------------- -->
+        <section id="ingreso" >
+            <h3>Empezar recorrido</h3>
+            <form action="" method="post" action="">
+                <input type="text" name="usuario" placeholder="Usuario">
+                <input type="password" name="contrasena" placeholder="Contraseña"> 
+                <label for="recuerdame"><input type="checkbox" name="recuerdame" id="recuerdame">Recuérdame</label>
+                <input type="button" name="entrar" value="Vamos">
+            </form>
+            <a href="#" onClick="abrirmodal2()">¿Olvidaste tu contraseña?</a>
+            <a href="#" onClick="abrirmodal()">¿Aún no eres miembro?</a>
+        </section>
+        <!-- *********************************************************************** -->
+        <!-- *********************************************************************** -->
+        
+        <!-- -------------------INGRESO NUEVO USUARIO------------------------------- -->
+        <!-- ----------------------------------------------------------------------- -->
+        <section id="ventana">
+            <div id="cerrar" title="Lo pensaré">
+                <h2>Aprende enseñando</h2>
+                <a href="#" onClick="cerrarmodal()"><span class="icon-x"></span></a>
+            </div>
+            <div class="form-desple">
+                <form id="registro" action="" method="post">
+                    <div class="col1">
+                        <input type="text" name="rnombre" placeholder="Agrega tus nombres">
+                        <input type="text" name="rapellidos" placeholder="Agrega tus apellidos" required>
+                        <input type="text" name="rcorreo" placeholder="Agrega tu correo" required>
+                        <p class="adj">Foto de tu DNI</p>
+                        <input type="file" id="dni" accept="image/png" name="radj required">
+                    </div>               
+                    <div class="col2">
+                        <input type="password" name="rpassword" placeholder="Agrega tu contraseña" required>
+                        <input type="password" name="r2password" placeholder="Verifica tu contraseña" required>
+                        <button id="boton" type="submit">Bienvenido</button>    
+                    </div>
+
+                </form>    
+            </div>
+        </section>
+        <!-- *********************************************************************** -->
+        <!-- *********************************************************************** -->
+        </div>
+    </div>
+    <!-------------------------------------------->
+    
+    <section id="nosotros">
+        <article class="que">
+            <div class="letras">
+                <h2>¿QUÉ SOMOS?</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat omnis suscipit assumenda consequatur vel cum voluptatum eligendi nemo itaque magnam eaque dicta numquam, reprehenderit mollitia officiis iusto sint blanditiis eveniet!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque vel vitae inventore ipsam, modi, aut id at neque quasi ad hic, qui sunt dicta culpa exercitationem dolores amet porro magni!</p>
+            </div>           
+            <iframe width="100%" height="315"  frameborder="0" allowfullscreen></iframe>
+        </article>
+        <article class="quienes">
+                <h2>¿QUIÉNES SOMOS?</h2>
+                <div class="fila1">
+                    <div class="integrantes" >
+                        <div class="spanns">
+                            <span class="icon-google3"></span>
+                            <span class="icon-github"></span>
+                            <span class="icon-book2"></span>
+                        </div>
+                        <img src="../Imagenes/nostros1.png" alt="">
+                        <div class="infor">
+                            <p style="text-align:center">Diego Fernandez Verano</p>
+                            <p>Carrera:</p>
+                            <p style="text-align:center">Computación e Informática</p>
+                        </div>
+                    </div>
+                    <div class="integrantes" >
+                        <div class="spanns">
+                           <span class="icon-google3"></span>
+                           <span class="icon-github"></span>
+                           <span class="icon-book2"></span>
+                        </div>
+                        <img src="../Imagenes/nostros1.png" alt="">
+                        <div class="infor">
+                            <p style="text-align:center">Misael Delgado Gastelú</p>
+                            <p>Carrera:</p>
+                            <p style="text-align:center">Computación e Informática</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="fila2">
+                    <div class="integrantes" >
+                        <div class="spanns">
+                           <span class="icon-google3"></span>
+                           <span class="icon-github"></span>
+                           <span class="icon-book2"></span>
+                        </div>
+                        <img src="../Imagenes/nostros1.png" alt="">
+                        <div class="infor">
+                            <p style="text-align:center">Alexis Pequeño</p>
+                            <p>Carrera:</p>
+                            <p style="text-align:center">Computación e Informática</p>
+                        </div>
+                    </div>
+                    <div class="integrantes" >
+                        <div class="spanns">
+                           <span class="icon-google3"></span>
+                           <span class="icon-github"></span>
+                           <span class="icon-book2"></span>
+                        </div>
+                        <img src="../Imagenes/nostros1.png" alt="">
+                        <div class="infor">
+                            <p style="text-align:center">Josué Josué</p>
+                            <p>Carrera:</p>
+                            <p style="text-align:center">Computación e Informática</p>
+                        </div>
+                    </div>
+                </div>
+        </article>
+        <article class="porque">
+            <h2>¿POR QUÉ SOMOS</h2>
+            <div class="letras">
+                
+                <article>
+                    <img src="../Imagenes/porqsomos1.png" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat omnis suscipit assumenda consequatur vel cum voluptatum eligendi nemo itaque magnam eaque dicta numquam, reprehenderit mollitia officiis iusto sint blanditiis eveniet!
+                    </p>
+                </article>
+                <article>
+                    <img src="../Imagenes/porqsomos2.png" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat omnis suscipit assumenda consequatur vel cum voluptatum eligendi nemo itaque magnam eaque dicta numquam, reprehenderit mollitia officiis iusto sint blanditiis eveniet!
+                    </p>
+                </article>
+                <article>
+                    <img src="../Imagenes/porqsomos3.png" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat omnis suscipit assumenda consequatur vel cum voluptatum eligendi nemo itaque magnam eaque dicta numquam, reprehenderit mollitia officiis iusto sint blanditiis eveniet!
+                    </p>
+                </article>
+                <article>
+                    <img src="../Imagenes/porqsomos4.png" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat omnis suscipit assumenda consequatur vel cum voluptatum eligendi nemo itaque magnam eaque dicta numquam, reprehenderit mollitia officiis iusto sint blanditiis eveniet!
+                    </p>
+                </article>
+                
+            </div>      
+            
+            
+        </article>
+    </section>
+    
+</body>
+</html>
